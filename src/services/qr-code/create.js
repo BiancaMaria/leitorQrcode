@@ -5,7 +5,6 @@ import handle from '../qr-code/handle.js';
 async function createQrcode() {
 
     prompt.get(promptQrcode,handle)
-
     prompt.start();
 }
 
