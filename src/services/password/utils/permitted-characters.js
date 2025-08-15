@@ -1,4 +1,4 @@
-
+//extract method
 async function permittedCharacters() {
     let permitted = [];
         

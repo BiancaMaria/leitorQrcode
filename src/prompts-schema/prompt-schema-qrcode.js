@@ -1,9 +1,13 @@
 import chalk from 'chalk';
 
+
 const promptQrcode = [
     {
         name: 'link',
         description: chalk.green('Digite o link para gerar o QR Code:'),
+        pattern: /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/,
+        message: chalk.red.italic('Por favor, insira um link válido (ex: https://google.com)'),
+        required: true,
     },
     {
         name: 'type',
@@ -13,5 +17,6 @@ const promptQrcode = [
         required: true
     },
 ];
+
 
 export default promptQrcode;
