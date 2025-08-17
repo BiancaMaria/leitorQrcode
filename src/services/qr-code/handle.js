@@ -14,7 +14,6 @@ async function handle(error, result) {
 
   // Move o cursor para o início da linha e a limpa
   process.stdout.write('\r\x1B[K');
-  //console.clear();
 
   qr.generate(result.link, { small: isSmall }, (qrcode) => {
     console.log(chalk.green("QR Code gerado com sucesso!!!\n"));
